@@ -76,12 +76,10 @@ const createPost = (post) => {
                   </a>
                   <a href="#" class="post__user">phero</a>
                 </div>
-
                 <button class="post__more-options">
                   <i class="fa-solid fa-ellipsis"></i>
                 </button>
               </div>
-
               <div class="post__content">
                 <div class="post__medias">
                   <img
@@ -91,29 +89,23 @@ const createPost = (post) => {
                   />
                 </div>
               </div>
-
               <div class="post__footer">
                 <div class="post__buttons">
                   <button class="post__button" onclick="addToLiked(${post.id})">
                   <i class="fa-solid fa-heart ${
 										isLiked(post.id) && 'text-danger'
 									}"></i>
-                    
                   </button>
                   <button class="post__button">
                     <i class="fa-solid fa-comment"></i>
                   </button>
-                  
-
                   <div class="post__indicators"></div>
-
                   <button class="post__button post__button--align-right" onclick="reportPost(${
 										post.id
 									})">
                     <i class="fa-solid fa-ban"></i>
                   </button>
                 </div>
-
                 <div class="post__content">${displayContent(
 									post.description
 								)}</div>
@@ -123,14 +115,11 @@ const createPost = (post) => {
                     <a href="#" class="post__likes-avatar">
                       <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="User Picture" />
                     </a>
-
                     <span>Liked by
                       <a class="post__name--underline" href="#">user123</a> and
                       <a href="#">73 others</a></span>
                   </div>
-
                   <hr/>
-
                   <div class="post__description">
                     <small>
                       <a class="post__name--underline" href="#">
